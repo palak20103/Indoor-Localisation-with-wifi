@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scannplot">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/buttonplt"
+        android:src="@drawable/background"></ImageView>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+       >
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <Button
+        android:id="@+id/buttonscnplt"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:layout_above="@id/buttonplt"
+        android:layout_gravity = "bottom"
+        android:textColor="@color/black"
+
+        android:text = "Scan for PLOT"
+        />
+    <Button
+        android:id="@+id/buttonplt"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity = "bottom"
+        android:textColor="@color/black"
+
+        android:text = "PLOT"
+      />
+
+</RelativeLayout>

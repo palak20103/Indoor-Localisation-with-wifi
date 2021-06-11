@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".knntst">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        ></ImageView>
+    <ListView
+        android:id = "@+id/wifiList211"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_above = "@+id/scan211" />
+    <Button
+        android:id = "@+id/scan211"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:textColor="@color/black"
+        android:layout_above="@id/ll11"
+
+        android:text = "Scan WiFi" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll11"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll31"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:id="@+id/roomNamefindText11"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="You are at Room Number "
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:text=" "
+                android:id="@+id/roomNamefindEdit11"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id = "@+id/testbtn11"
+            android:layout_width = "match_parent"
+            android:layout_height = "50dp"
+            android:textColor="@color/black"
+            android:text = "FIND ME " />
+
+    </LinearLayout>
+</RelativeLayout>

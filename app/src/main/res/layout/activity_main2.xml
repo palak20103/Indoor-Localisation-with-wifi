@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical"
+    tools:context = ".MainActivity2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:id="@+id/img1"
+        ></ImageView>
+    <ListView
+        android:id = "@+id/wifiList"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_above = "@+id/scanBtn" />
+    <Button
+        android:id = "@+id/scanBtn"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:layout_above="@id/plotbtn"
+        android:textColor="@color/black"
+        android:layout_gravity = "bottom"
+        android:layout_margin = "5dp"
+        android:text = "Scan WiFi" />
+    <Button
+        android:id = "@+id/plotbtn"
+        android:layout_width = "match_parent"
+        android:textColor="@color/black"
+        android:layout_height = "50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity = "bottom"
+        android:layout_margin = "5dp"
+        android:text = "Plot RSSI VALUES" />
+
+</RelativeLayout>

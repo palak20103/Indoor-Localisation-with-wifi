@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".train">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:id="@+id/img1"
+        ></ImageView>
+    <ListView
+        android:id = "@+id/wifiList2"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_above = "@+id/scan2" />
+    <Button
+        android:id = "@+id/scan2"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:textColor="@color/black"
+        android:layout_above="@id/ll"
+
+        android:text = "Scan WiFi" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ll1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/roomNameText"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Room Number"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/roomNameEdit"
+        />
+
+    </LinearLayout>
+        <Button
+            android:id = "@+id/Insert_To_Database"
+            android:layout_width = "match_parent"
+            android:layout_height = "50dp"
+            android:textColor="@color/black"
+            android:text = "Insert To Database" />
+        
+   </LinearLayout>
+</RelativeLayout>
+
